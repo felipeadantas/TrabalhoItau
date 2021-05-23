@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</TITLE>
+</head>
+
+<body class="body">
+ 
+  <div>
+    <button class="button" id="button-plus" class="button">Aumentar letras</button>
+    <br>
+    <button id="button-minus" class="button">Diminuir letras</button>
+  </div>
+  <br>
+  <hr>
+
+<fieldset class="fieldsetIndex box">
+  <legend class="title">
+    <h1><p>Seja bem vindo ao informe covid</p></h1>
+  </legend>
+  <p>Aqui voc&ecirc encontra os informes mais recentes sobre o covid 19</p>
+  <hr>
+  <ul>
+  <li><a class="text" href="noticia1.html">As vacinas s&atildeo eficazes.</a>
+  <li><a class="text"href="noticia2.html">Novos estudos afirmam que vacina da Pfizer/BioNTech consegue neutralizar variantes da Covid-19.</a>
+  <li><a class="text"href="https://youtu.be/MxyS5FVJnDQ">6 boas not&iacutecias ap&oacutes um ano de pandemia, apesar da trag&eacutedia no Brasil.</a>
+  <li><a class="text"href="https://youtu.be/Wh22U1nhSZw">Gr&aacutevida supera o Covid e passa dia das m&atildees com filhos.</a>
+  <li><a class="text"href="noticia5.html"> Fase 4 do covid-19</a>
+  <li><a class="text"href="https://podcasts.apple.com/br/podcast/vacinas-para-covid-19-no-brasil-vamos-saber-mais-um/id15301538">Vacinas para Covid-19 no Brasil, vamos saber um pouco sobre cada uma delas?</a>
+  <li><a class="text"href="perfil.html">Conhe&ccedila Nossos Perfis.</a>
+  <li><a class="text"href="info.html">Informe Covid</a> 
+  <li><a class="text"href="saibamais.html">Saiba mais.</a>
+  <li><a class="text"href="form_itau.html">Fale Conosco.</a>
+  </ul>
+
+  <font face="verdana, arial" size="1">
+    Produzido pelo informa-covide-19>
+    <br>
+    Copyright (c) 2021 -
+    <br>
+    <li>Aloisio Santos
+    <li>&Eacuterica Andrade
+    <li>Felipe Aparecido
+    <li>Pedro Tib&eacuterio
+    <li>Valdair Silva
+    </font>
+</fieldset>
+
+
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</title>
+
+<head>
+<body class="body">
+<button id="button-plus" class="button" >Aumentar letras</button>
+<br>
+<button id="button-minus" class="button" >Diminuir letras</button>
+<h3><p>VEJA A BAIXO AS PRINCIPAIS NOT&IacuteCIAS SOBRE O COVID-19.</p></h3>
+Resultados de dois estudos preliminares divulgados por cientistas das empresas farmac&ecircuticas Pfizer e BioNTech afirmam que a vacina produzida por esses laborat&oacuterios
+contra a Covid-19 conseguiu neutralizar a muta&ccedil&atildeo brit&acircnica do coronav&aacuterus. Os dados dos testes foram divulgados nesta ter&ccedila-feira (19) em vers&atildeo preliminar,
+ainda sem revis&atildeo de outros pesquisadores ou publica&ccedil&atildeo cient&iacutefica.
+A variante descoberta no Reino Unido preocupa a comunidade internacional pela sua maior transmissibilidade.
+Para avaliar a efic&iacutecia da vacina, os pesquisadores testaram a variante do coronav&iacuterus em laborat&oacuterio com o plasma de 36 pacientes curados, ap&oacutes terem desenvolvido
+formas graves ou mais leves de Covid-19. "A maioria das amostras" conseguiu "neutralizar" a variante, embora o "poder" de neutraliza&ccedil&atildeo tenha sido reduzido em
+3 das amostras.
+Os pesquisadores chegaram a conclus&otildees semelhantes, ao compararem o efeito do plasma de 16 participantes de seus ensaios cl&iacutenicos sobre a variante do Reino Unido
+(B.1.1.7) e o v&iacuterus original (SARS-CoV-2), descoberto em Wuhan, na China, em dezembro de 2019.
+"Nossos resultados sugerem que a maioria das respostas vacinais devem ser eficazes contra a variante B.1.1.7", afirma a conclus&atildeo do estudo, que tamb&eacutem n&atildeo
+foi analisado por outros cientistas internacionais.
+Os pesquisadores ainda explicaram que a "flexibilidade" da tecnologia da vacina de RNA mensageiro, produzida pela Pfizer e BioNTech permitiria que ela fosse adaptada
+a uma nova cepa do v&iacuterus, se necess&aacuterio.
+Outro estudo j&aacute havia apontado a efic&iacutecia
+Em outro estudo publicado online no in&iacutecio de janeiro, pesquisadores da BioNTech / Pfizer j&aacute haviam estimado que a vacina parecia eficaz contra uma "&ccedil&atildeo
+chave" comum as variantes brit&acircnica, sul-africana e brasileira.
+Essa muta&ccedil&atildeo, denominada N501Y, est&aacute localizada ao n&iacutevel da prote&iacutena Spike do coronav&iacuterus, a ponta que fica em sua superf&iacutecie e permite que ele se fixe as
+c&eacutelulas humanas, desempenhando um papel fundamental na infec&ccedil&atildeo viral.
+Mas em rela&ccedil&atildeo e efic&iacutecia das vacinas, os especialistas est&atildeo especialmente preocupados com outra muta&ccedil&atildeo chamada E484K, que as variantes sul-africana e brasileira
+carregam, mas n&atildeo a inglesa. Neste contexto, &eacute "importante continuar a monitorizar as muta&ccedil&otildees e avaliar o seu impacto na neutraliza&ccedil&atildeo in vitro", afirmam
+os autores.
+(Com informa&ccedil&otildees da AFP)
+<br>
+<a class="text" href="index1.html">Voltar a P&aacutegina Inicial.</a>
+<hr>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>

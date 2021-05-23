@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</title>
+</head>
+
+<body class="body">
+<button id="button-plus" class="button" >Aumentar letras</button>
+<br>
+<button id="button-minus" class="button" >Diminuir letras</button>
+<h1><p>Conhe&ccedila um pouco mais os desenvolvedores.</p></h1>
+<hr>
+<h3><p>Aloisio Santos</p></h3>
+<h3><p>Quer saber mais sobre Aloisio Santos?</p></h3>
+<br>
+<a href="https://www.linkedin.com/in/aloisio-santos-da-silva-b869b2a5">Clique Aqui.</a>
+<hr>
+<h3><p>&Eacuterika Andrade</p></h3>
+<h3><p>Quer saber mais sobre &Eacuterika Andrade?</p></h3>
+<br>
+<a href="https://www.linkedin.com/in/�rika-brand�o-andrade-santos-68563b212">Clique Aqui.</a>
+<hr>
+<h3><p>Felipe Aparecido</p></h3>
+<p>Felipe Aparecido: residente no estado de S&atildeo Paulo, auxiliar de
+produ&ccedil&atildeo</p>
+<h3><p>Quer saber mais sobre Felipe Aparecido?</p></h3>
+<br>
+<a href="https://www.linkedin.com/in/felipe-aparecido-dantas">Clique Aqui.</a>
+<hr>
+<h3><p>Pedro Tib&eacuterio</p></h3>
+<p>Pedro Tib&eacuterio, residente do estado do cear&aacute, Professor de M&uacutesica e Produtor
+Musical.</p>
+<h3><p>Quer saber mais sobre Pedro Tib&eacuterio?</p></h3>
+<br>
+<a href="https://www.linkedin.com/in/pedro-tib�rio-de-oliveira-5a4637212">Clique Aqui.</a>
+<hr>
+<h3><p>Valdair Silva</p></h3>
+<h3><p>Quer saber mais sobre Valdair Silva?</p></h3>
+<br>
+<a href="http://linkedin.com/in/valdair-silva-8a958977">Clique Aqui.</a>
+<hr>
+<a class="text" href="index1.html">Voltar a P&aacutegina Inicial.</a>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>

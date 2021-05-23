@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</title>
+</head>
+
+<body class="body">
+<button id="button-plus" class="button" >Aumentar letras</button>
+<br>
+<button id="button-minus" class="button" >Diminuir letras</button>
+<h2><p>Tenha Mais Informa&ccedil&otildees Sobre o Covid-19</p></h2>
+<hr>
+<h3><p>Existem mais artigos sobre SARS-CoV-2 e covid-19 do que sobre mal&aacuteria</p></h3>
+
+H&aacute um ano, ficamos surpresos que, em pouco mais de um m&ecircs, desde a notifica&ccedil&atildeo dos primeiros casos, j&aacute existiam mais de 164 artigos cient&iacuteficos no PubMed (um
+mecanismo de busca de acesso aberto para consultar publica&ccedil&otildees &iacuteficas) sobre o novo v&iacuterus e a doen&ccedila.
+Hoje esse n&uacutemero se multiplicou por mais de 600 e j&aacute ultrapassa os 100 mil artigos, mais do que os que aparecem sob o t&iacutetulo de "mal&aacuteria", por exemplo. Mais
+de 4,8 mil estudos em andamento sobre tratamentos e vacinas est&atildeo registrados.
+<hr>
+<h3><p>Mais de 200 novas vacinas</p></h3>
+
+H&aacute um ano, foi destacado que havia oito novos projetos de vacinas contra o coronav&iacuterus SARS-CoV-2.
+De acordo com o portal bioRENDER, existem agora mais de 195 candidatas, com pelo menos 71 j&aacute em ensaios cl&iacutenicos.
+Elas empregam todos os tipos de tecnologias: v&iacuterus vivos atenuados, v&iacuterus inativados, subunidades de prote&iacutenas, vetores virais recombinantes, part&iacuteculas semelhantes
+a v&iacuterus (VLPs), DNA e mRNA.
+Nunca se investiu tanto dinheiro e houve tanta colabora&ccedil&atildeo para o desenvolvimento de vacinas entre entidades
+p&uacuteblicas e privadas, centros de pesquisa, universidades, empresas farmac&ecircuticas, empresas e ONGs.
+Alguns projetos foram abandonados, mas outros j&aacute foram autorizados pela OMS: Pfizer/BioNTech e Moderna com tecnologia de mRNA, AstraZeneca/Oxford e Sputnik V com
+tecnologia de a de novos v&iacuterus recombinante e o Sinopharm chin&ecircs, com coronav&iacuterus inativos.
+Pelo menos 20 outras vacinas j&aacute est&atildeo em ensaios cl&iacutenicos de fase 3 e podem ser aprovadas nas pr&oacuteximas semanas e meses, se os resultados forem satisfat&oacuterios.
+<hr>
+<h3><p>As vacinas RNA s&atildeo muito seguras</p></h3>
+
+Um dos poss&iacuteveis efeitos graves das vacinas &eacute a anafilaxia, uma rea&&atildeo al&eacutergica com risco de vida que geralmente ocorre logo ap&oacutes a aplica&ccedil&atildeo da vacina.
+Os dados do primeiro m&ecircs de vacina&ccedil&atildeo foram analisados ​​nos EUA, onde foram administradas mais de 17,5 milh&otildees de doses (exatamente 9.943.247 da vacina
+Pfizer/BioNTech e 7.581.429 da vacina Moderna).
+O Sistema de Notifica&ccedil&atildeo de Rea&ccedil&ccediles Adversas a Vacina (VAERS) registrou apenas 66 casos de anafilaxia (47 com a vacina Pfizer/BioNTech e 19 com a vacina Moderna).
+Isso representa menos de 4 casos por milh&atildeo de doses ou 0,0003% de todas as doses analisadas. Vinte e um (32%) desses 66 casos tiveram registros anteriores de anafilaxia
+por outros motivos. Nenhuma morte foi detectada.
+Se comparado com o n&uacutemero de casos de Covid-19, as sequelas deixadas pela doen&ccedila e o n&uacutemero de &oacutebitos, o benef&iacutecio das vacinas supera em muito os poss&iacuteveis
+efeitos adversos.
+Tudo isso nos permite afirmar que, por enquanto, as vacinas de RNA s&atildeo muito seguras.
+<hr>
+<a class="text" href="index1.html">Voltar a P&aacutegina Inicial.</a>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>

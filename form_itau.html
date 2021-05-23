@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</title>
+</head>
+
+<body class="body">  
+  <div>
+    <fieldset class="fieldset box">
+      <button id="button-plus" class="button">Aumentar letras</button>
+      <br>
+      <button id="button-minus" class="button">Diminuir letras</button>
+      <br>
+      <hr>
+      <legend class="title">
+        <h1 class="text"><p>Preencha seus dados Abaixo</p></h1>
+      </legend>
+      <form>
+        <div class="container">
+          <div class="row">
+            <div>
+              <label class="text">
+                NOME:
+              </label>
+              <input type="text"name="nome"placeholder="DIGITE SEU NOME"required>
+              <br>
+            </div>
+            <div>
+              <label class="text">
+                SOBRENOME:
+              </label>
+              <input type="text"name="sobrenome"required placeholder="SOBRENOME">
+              <br>
+            </div>
+            <div>
+              <label class="text">
+                CONTATO DE EMAIL:
+              </label>
+              <input type="text" name="contatodeskype"required placeholder="CONTATO DE EMAIL">
+              <br>
+            </div>
+          </div>
+        </div>
+        <h2 class="text">IDADE</h2>
+        <div>
+          <label class="text" >
+            0 A 12 ANOS:
+          </label>
+          <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+          <br>
+          <label class="text">
+            13 A 21 ANOS:
+          </label>
+          <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+          <br>
+          <label class="text">
+            22 A 40 ANOS:
+          </label>
+          <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+          <br>
+          <label class="text">
+            41 A 60 ANOS:
+          </label>
+          <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+          <br>
+          <label class="text">
+            MAIS:
+          </label>
+          <input type="radio" name="IDADE"0 A 12 ANOS value="0 A 12 ANOS">
+          <br>
+          <h2 class="text">Possui Alguma Defici&Ecircncia?</h2>
+          <label class="text">
+            SIM:
+          </label>
+          <input type="checkbox" name="categoria" value="sim" />
+          <br />
+          <label class="text">
+            N&AtildeO:
+          </label>
+          <input type="checkbox" name="categoria" value="nao" />
+          <br />
+          <label class="text">
+            PREFIRO N&AtildeO DIZER:
+          </label>
+          <input type="checkbox" name="categoria"value="prefironaodizer" />
+          <br />
+          <label class="text">
+            PERGUNTE:
+          </label>
+          <input type="text"name="nome"placeholder="DIGITE SUA PERGUNTA"required>
+        </div> 
+
+        <br>
+        <hr>
+        <input type="reset" class="button" value="Apagar" />
+        <br>
+        <input type="submit" class="button" value="Enviar" />
+        </form>
+    </fieldset>
+  </div>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+</body>
+</html>

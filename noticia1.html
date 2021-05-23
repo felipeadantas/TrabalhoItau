@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>
+COMBATENDO O COVID 19: UNIDOS EM UM &UacuteNICO OBJETIVO.
+</TITLE>
+<HEAD>
+
+<body class="body">
+<button id="button-plus" class="button" >Aumentar letras</button>
+<br>
+<button id="button-minus" class="button" >Diminuir letras</button>
+</h1 class="text" ><p>VEJA A BAIXO AS PRINCIPAIS NOT&IacuteCIAS SOBRE O COVID-19.</p></h3>
+<b>Israel &eacute o pa&iacutes com a maior popula&ccedil&atildeo j&aacute vacinada.</b>
+<br>
+<br>
+<br>
+No in&iacutecio de fevereiro e desde o in&iacutecio da campanha em dezembro, mais de 3,67 milh&otildees de israelenses receberam a primeira dose da vacina de mRNA da Pfizer/BioNTech.
+Isso representava cerca de 40% da popula&ccedil&atildeo do pa&iacutes. Mais de 28% tamb&eacutem receberam a segunda dose. Entre aqueles com mais de 60 anos, mais de 80% foram vacinados.
+Dados preliminares mostram que a vacina&ccedil&atildeo est&aacute sendo eficaz.
+O n&uacutemero de infec&ccedil&atildees est&aacute diminuindo significativamente, especialmente entre pessoas com mais de 60 anos. Nessa faixa et &aacuteria, houve 56% menos infec&ccedil&atildees,
+42% menos hospitaliza&ccedil&otildees e 35% menos mortes por covid-19 ap&oacutes a segunda dose.
+Os resultados com as duas doses s&atildeo excelentes: dos 523 mil israelenses vacinados com duas doses, h&aacute apenas 544 casos de covid-19, apenas quatro casos de covid-19
+grave e nenhuma morte. Esses dados confirmam os obtidos em ensaios cl&iacutenicos anteriores.
+<hr> 
+<a class="text" href="index1.html">Voltar a P&aacutegina Inicial.</a>
+<script>
+var $plus = document.getElementById('button-plus'),
+    $minus = document.getElementById('button-minus'),
+    $target = document.getElementById('target');
+
+$target.style.fontSize = '14px';
+
+$plus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) + 1) + 'px';
+});
+
+$minus.addEventListener('click', function(argument) {
+  $target.style.fontSize = (getFontSize($target) - 1) + 'px';
+});
+function getFontSize($target) {
+  var fontSize = ($target.style.fontSize || '').replace(/\D/g,'');
+  return parseInt(fontSize, 10);
+}
+</script>
+
+</body>
+</html>
